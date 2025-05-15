@@ -95,21 +95,36 @@ html
 </script>
 
 
-console.log("Hello World");
-writing this in the script file
-all the statements should be terminated by semicolon 
-"Hello World" is a strign 
+# JavaScript Basics
 
-in js : // this represents a comment, ignored by js, not executed but for documentation
-more like why are doing this instead of what it does 
+- When **writing code in a script file**, all statements **should be terminated by a semicolon** (`;`).
+
+- `"Hello World"` is a **string** in JavaScript.
+
+- In JavaScript, `//` is used to write a **comment**.
+
+  - Comments are **ignored by JavaScript** and **not executed**.
+
+  - Comments are mainly used for **documentation**, explaining **why** something is done rather than **what** it does.
 
 
-to look at the output 
+# How to See JavaScript Output
+
+To look at the output of your JavaScript code:
+
+- Open your **webpage** in a browser.
+- Right-click anywhere on the page and select **Inspect**.
+- Go to the **Console** tab to see the output.
+
+Alternatively, you can use the keyboard shortcut:
+
+- **Ctrl + Shift + I** (on Windows/Linux) or **Cmd + Option + I** (on Mac) to open the developer tools.
+- Then go to the **Console** tab.
+
+> Note:  
+> The shortcut **Alt + Ctrl + I** might not work depending on your browser or system settings.
+
 ![image](https://github.com/user-attachments/assets/d83592e3-66b3-4f50-8d29-c21fae8b3d51)
-go to the webpage
-inspect go to console 
-or alternatively
-alt+ctrl+i kk this is not working
 ![image](https://github.com/user-attachments/assets/8edc4321-6307-49c2-a252-a19ff896ef87)
 
 
@@ -122,63 +137,134 @@ still works
 ![image](https://github.com/user-attachments/assets/d77e22d4-7ade-44a1-9709-e5046e6da8e9)
 
 
+# Running JavaScript with Node.js
 
-so far we ran js in browser
-how to do it on node js 
-go to the directory nad type node file.js
+So far, we have run JavaScript code in the browser.
+
+To run JavaScript using **Node.js**:
+
+1. Open your terminal or command prompt.
+2. Navigate to the directory where your JavaScript file (`file.js`) is saved using `cd` command.
+3. Type the following command and press Enter:
+
+   ```bash
+   node file.js
+
 ![image](https://github.com/user-attachments/assets/0848165a-d86c-4ef6-92ce-1515cf2259f6)
 
+# Running JavaScript with Node.js Inside VS Code
 
-even in our vscode itself, insetead of explicity doing it in cmd 
+You can run your JavaScript files using Node.js **directly inside VS Code** without opening the command prompt separately.
+
+Steps:
+
+1. Open your JavaScript file in **VS Code**.
+2. Open the **Integrated Terminal** in VS Code:
+   - Use the shortcut: `` Ctrl + ` `` (backtick key)
+   - Or go to **View > Terminal** from the menu.
+3. In the terminal, make sure you are in the directory containing your JS file.
+4. Run the file by typing:
+
+   ```bash
+   node file.js
+   
 ![image](https://github.com/user-attachments/assets/7cae88ec-366d-411a-9917-a0353fdf0994)
 
+# Variables
 
-# variables 
-var to store data temp in computer memory 
-a var is box, what is inside is data, label on box is name of var 
+- A **variable** is used to store data temporarily in the computer's memory.
+- Think of a variable as a **box**:  
+  - The **label** on the box is the **name of the variable**.  
+  - What’s inside the box is the **data**.
+  - when we declare a var the value is **undefined**
 
-to declare a var: 
-let name; 
-so by default var values are undefined 
+## Declaring a Variable
+
+```js
+let name;
+```
+
 ![image](https://github.com/user-attachments/assets/74c2365b-0e34-4810-9788-445ec7ceca21)
 
 
-rules: 
-shouldn't be a reserved keyword, let, if ,var, else
-should be meaningful
-cannot start with a numb
-cannot contain space or hypen 
-should follow camel notation : firstName
-are casesensitive
+# Variable Naming Rules
 
-types of decleartion : 
-let firstName="ganja", lastName ="vidya";
+- Variable names **should not** be reserved keywords like `let`, `if`, `var`, `else`, etc.
+- Variable names **should be meaningful** (describe what they store).
+- Variable names **cannot start with a number**.
+- Variable names **cannot contain spaces or hyphens** (`-`).
+- Variable names should follow **camelCase notation** (e.g., `firstName`).
+- Variable names are **case-sensitive** (`name` and `Name` are different).
 
-best Practice:
-let firstName='ganja';
-let lastName='vidya';
+# Types of Declaration
 
-if we want our var to be fixed use const instead of let
+You can declare multiple variables in one line:
+
+```js
+let firstName = "ganja", lastName = "vidya";
+```
+
+# Best Practice
+
+Declare each variable on its own line for better readability:
+
+```js
+let firstName = 'ganja';
+let lastName = 'vidya';
+```
+
+# Using `const` for Fixed Variables
+
+- If you want your variable to be **fixed** (its value should not change), use `const` instead of `let`.
+
+Example:
+
+```js
+const pi = 3.14;
+```
 ![image](https://github.com/user-attachments/assets/89646836-ee9b-4672-9b77-2deb0eec4926)
 
 
 
-types of data types: 
-primitive and reference types
+# Types of Data Types
 
-primitive: 
-strings, numbers, boolea, undefined, null
+There are two main types of data types in JavaScript:
+
+## 1. Primitive Types
+- `string`
+- `number`
+- `boolean`
+- `undefined`
+- `null`
+
+## 2. Reference Types
+- objects
+- array
+- functions
+
 ![image](https://github.com/user-attachments/assets/f2d249cb-d2f7-40b0-aa98-c6be0d31eda1)
 
-js is dynamic language 
+# JavaScript is a Dynamic Language
 
-two types: 
-static : variables are fixed and cannot be changed in the future 
+There are two types of typing in programming languages:
 
+- **Static Typing:**  
+  Variables have a fixed type that **cannot be changed** after declaration.
 
-for the same above code if we run in the browser, initially the typeof name would be string 
-but if we change the value of name which is usually allowed in the dynamically types lange
-and again validate the type it would return number 
+- **Dynamic Typing:**  
+  Variables can hold **any type of value** and their type can change at runtime.
+
+---
+
+### Example in JavaScript (Dynamic Typing)
+
+```js
+let name = "ganja";          // typeof name is "string"
+console.log(typeof name);    // Output: string
+
+name = 123;                  // Now name holds a number
+console.log(typeof name);    // Output: number
+```
 ![image](https://github.com/user-attachments/assets/bbe09c9e-4eaf-4ee7-9a5e-04caa0519bbd)
 
 dynamic typed: variables can be changes at runtime 
@@ -189,25 +275,63 @@ for the given data
 ![image](https://github.com/user-attachments/assets/f591bb71-578c-41e7-a334-8830e54e1630)
 
 
-# objects
-reference types 
-objects, 
-arrays
-functions
+# Objects
 
-when dealing with relateble var we can put it inside an object
-reprsentation of person 
+- Objects are **reference types** in JavaScript.
+- Common reference types include:
+  - **Objects**
+  - **Arrays**
+  - **Functions**
+
+---
+
+### Why Use Objects?
+
+- When dealing with **related variables**, we can group them inside an **object**.
+- This helps to represent complex data, like a **person** with multiple properties.
+
+---
+
+### Example: Representing a Person
+
+```js
+let person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 30
+};
+```
+
 ![image](https://github.com/user-attachments/assets/f55a69a4-7174-4892-aa13-499a4ee2b43c)
 
 ![image](https://github.com/user-attachments/assets/adf3514a-902b-4cb8-ae72-6dbf8016a28e)
 
 ![image](https://github.com/user-attachments/assets/947f2337-34f8-4dd4-b409-77dae33461db)
 
-to change/refer the value we use dot notation 
 ![image](https://github.com/user-attachments/assets/1ca8f9fd-5d71-4e89-82d7-2cf0cad034c3)
 
 or 
+# Accessing and Changing Object Values
 
+- To **refer to** or **change** a value inside an object, use **dot notation**.
+
+---
+
+### Example:
+
+```js
+let person = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+
+// Access value
+console.log(person.firstName);  // Output: John
+
+// Change value
+person.firstName = 'Jane';
+console.log(person.firstName);  // Output: Jane
+```
 
 using bracket notation
 ![image](https://github.com/user-attachments/assets/e440ee47-9478-4a66-b6cc-b37af0c81446)
