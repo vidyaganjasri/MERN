@@ -175,10 +175,30 @@ we can add them using the index
 in js we can have diff types too in an array 
 ![image](https://github.com/user-attachments/assets/611c6238-80c6-4358-9c3a-e96e25623159)
 
+
+
+
+
 type: 
 ![image](https://github.com/user-attachments/assets/da65a7fc-7da9-4d38-9d7f-204e69b6cd31)
 
 it has no of properties used with dot notation , length...
 ![image](https://github.com/user-attachments/assets/1ac10ff5-3276-4744-b738-5e69569504d9)
 
+# next is functions 
+
+fundamental building blocks 
+perfomrs a task / calculates a val 
+
+![image](https://github.com/user-attachments/assets/846651d5-b306-4ab2-aaf6-3e67b3592a43)
+![image](https://github.com/user-attachments/assets/50b77c1c-7a1c-4de9-92c6-67c12bd4c40a)
+
+
+it can also have inputs too 
+![image](https://github.com/user-attachments/assets/6998a470-2027-4bc5-b07d-06df356770ad)
+![image](https://github.com/user-attachments/assets/87e9b0d9-fd9a-4151-88df-9734a21db50b)
+
+types of function : 
+log function and square function 
+![image](https://github.com/user-attachments/assets/8ccfae33-ab53-4043-a281-85d2b9a86c3c)
 
