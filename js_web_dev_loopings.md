@@ -306,3 +306,41 @@ console.log(todoCompleted);
 
 ![image](https://github.com/user-attachments/assets/80036c6d-19b7-40ed-bc1c-12cd34ff30a4)
 
+# Understanding `==` vs `===` in JavaScript
+
+---
+
+## The Code
+
+```js
+const x = '10';
+
+if (x == 10) {
+    console.log('x is 10');
+}
+
+// == doesn't match the datatypes while === does
+
+if (x === 10) {
+    console.log('x is 10');
+} 
+else if (x > 10) {
+    console.log('x is greater than 10');
+} 
+else {
+    console.log('x is a string');
+}
+```
+# output
+![image](https://github.com/user-attachments/assets/552c2e45-7ac3-4e89-bcef-423dba699a15)
+
+# operationsl
+```js
+const x = '10';
+const y = 4;
+
+if (x>3 || y>10){
+    console.log("either of the con is true");
+}
+//similarly &&
+```
