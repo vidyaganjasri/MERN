@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            margin: 100px;
+        }
+        input{
+            padding: 8px 10px;
+        }
+        button{
+            padding: 8px 10px;
+            margin-left: 5px;
+        }
+        ul{
+            margin-top: 40px;
+            padding: 0;
+            list-style: none;
+        }
+        li{
+            margin: 8px;
+            font-size: 18px;
+        }
+        .delete-btn{
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Todo 📝</h2>
+    <input type="text" id="taskInput" placeholder="enter todo...">
+    <button id="addBtn">Add task</button>
+    <ul id="taskList"></ul>
+    <script>
+        const addBtn = document.getElementById("addBtn");
+        const taskInput = document.getElementById("taskInput");
+        const taskList = document.getElementById("taskList")
+
+        addBtn.addEventListener("click",()=>{
+            const taskText = taskInput.value.trim();
+
+            if(taskText==''){
+                alert("Please enter text");
+                return;
+            }
+
+            const taskNumber = taskList.children.length+1
+
+            const li = document.createElement("li");
+            li.innerText = taskNumber+'.'+taskText;
+
+            const delBtn = document.createElement("span");
+            delBtn.innerText = "❌";
+            delBtn.classList.add("delete-btn");
+
+            delBtn.addEventListener("click",()=>{
+                li.remove();
+            });
+
+            li.appendChild(delBtn);
+            taskList.appendChild(li);
+            taskInput.value = '';
+        });
+    </script>
+</body>
+</html>
