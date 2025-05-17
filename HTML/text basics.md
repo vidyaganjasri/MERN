@@ -39,11 +39,11 @@
 
 #### Common examples:
 
-- <em>
+- `<em>`
 
-- <strong>
+- `<strong>`
 
-- <abbr>
+- `<abbr>`
 
 🧪 Example:
 ``` html
