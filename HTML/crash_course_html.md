@@ -10,15 +10,17 @@
 
 - Markup Language: Tags that describe how content is displayed.
 
-📁 index.html
-Default file expected by most web servers.
+---
 
-Always in lowercase, with no spaces in the filename.
+# 📁 index.html
 
-🧱 Basic HTML Structure
-html
-Copy
-Edit
+- Default file expected by most web servers.
+- Always in lowercase, with no spaces in the filename.
+
+--- 
+
+# 🧱 Basic HTML Structure
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,15 +36,15 @@ Edit
     <p>This is a simple paragraph inside the body.</p>
   </body>
 </html>
-🧠 <head> – Metadata About the Page
-Not visible on the actual webpage.
+```
 
-Stores information about the page.
+## 🧠 <head> – Metadata About the Page
+- Not visible on the actual webpage.
 
-✅ Examples:
-html
-Copy
-Edit
+- Stores information about the page.
+
+## ✅ Examples:
+```html
 <!-- Charset -->
 <meta charset="UTF-8">
 
@@ -60,25 +62,31 @@ Edit
 
 <!-- Favicon -->
 <link rel="icon" href="img" type="image/x-icon">
-📄 <body> – Visible Content
-This part contains what users see on the screen.
+```
+---
 
-✅ Example:
-html
-Copy
-Edit
+## 📄 <body> – Visible Content
+- This part contains what users see on the screen.
+
+## ✅ Example:
+
+```html
 <h1>Main Heading</h1>
 <p>This is a paragraph that gives more details about the content.</p>
 <h1> to <h6>: Headings (largest to smallest).
-
+```
 <p>: Paragraph text.
-
-📌 Two Major Sections in HTML
+  
+---
+  
+## 📌 Two Major Sections in HTML
 Section	Purpose
-<head>	Metadata and links (not displayed)
-<body>	Visible page content
+- <head>	Metadata and links (not displayed)
+- <body>	Visible page content
 
-✅ HTML Validator
+--- 
+
+## ✅ HTML Validator
 Check your HTML for correctness using the W3C Validator.
 
 
