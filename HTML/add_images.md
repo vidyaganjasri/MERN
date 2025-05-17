@@ -42,7 +42,7 @@ The loading="lazy" attribute delays loading of images until the user scrolls nea
 ```
 title: Adds a tooltip when the user hovers over the image.
 
-## 🖼️ Image with Caption Using <figure> and <figcaption>
+## 🖼️ Image with Caption Using `<figure>` and `<figcaption>`
 ```html
 <figure>
     <img src="images/wa.jpg" 
