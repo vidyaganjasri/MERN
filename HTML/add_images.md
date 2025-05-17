@@ -22,7 +22,7 @@ This document demonstrates how to use HTML inside Markdown files (like README.md
   the page it is installed, hence fast and effecient.
 ---
 
-# ℹ️ What is loading="lazy"?
+## ℹ️ What is loading="lazy"?
 The loading="lazy" attribute delays loading of images until the user scrolls near them.
 
 ## ✅ Benefits:
