@@ -36,17 +36,7 @@ Each row is written using `<tr>` (table row), and inside it:
 ---
 
 ## What the Table Shows
-
-|         | Time           | Activity    |
-|---------|----------------|-------------|
-| Morning | 8am - 11am     | Write Code  |
-| Break   | 12pm - 1pm     | Eat Lunch   |
-| Afternoon | (spans 2 columns) | Yoga     |
-| Evening | (spans 2 rows) 1pm - 5am | Free Time |
-| Night   | —              | Sleep       |
-
-### Footer Message:
-> "And that's what I do every day, eat sleep and code"
+![image](https://github.com/user-attachments/assets/4f3c2900-382e-45d2-ba91-6ea22dc51e4a)
 
 ---
 
