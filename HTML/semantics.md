@@ -1,18 +1,28 @@
-h1, nav, hr are semantic elements caues they divide the web page into sections, 
-each serving a specific purpose 
-semantic: provides meaning 
-like nav, head ;provides heading, 
-section, list...
+# Semantic and Non-Semantic Elements in HTML
 
-we have three major sections 
+Semantic elements provide **meaning** to the content they enclose. They help structure a web page by dividing it into logical sections, each serving a specific purpose.
 
-we have heading, we can wrap it in header, can only have one header, top level 
-it may have sub title for it
+## Examples of Semantic Elements
 
-main element only one main per page, wrapping imp parts 
+- **`<h1>`**: Main heading of the page.
+- **`<nav>`**: Navigation links; can appear multiple times.
+- **`<hr>`**: Thematic break between sections.
+- **`<header>`**: Wraps the top section of a page; usually contains title and subtitle. Only **one main header** per page.
+- **`<main>`**: Contains the primary content. There should be **only one `<main>`** per page.
+- **`<footer>`**: Bottom section of the page; only **one footer** per page.
+- **`<section>`**: Groups related content.
+- **`<article>`**: Represents a self-contained piece of content.
+- **`<ul>`, `<ol>`, `<li>`**: Represent lists.
 
-footer just like header there can't be more then one footer per page, 
-one other thing, 
+> ✅ Semantic elements improve accessibility and SEO.
 
-can have more then one nav 
-ariel labelledby 
+## `aria-labelledby`
+
+- Used to improve accessibility by associating a label with a region or element.
+
+## Non-Semantic Elements
+
+- **`<div>`**: Block-level container with no specific meaning.
+- **`<span>`**: Inline container with no meaning; useful for styling specific words or phrases.
+
+> ⚠️ Use semantic elements whenever possible to make your HTML more readable and meaningful.
